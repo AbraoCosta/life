@@ -41,6 +41,11 @@ export class AppComponent {
       url: '/mais-visitados',
       icon: 'pricetag'
     },
+    {
+      title: 'Adicionar Produto',
+      url: '/detalhes-produtos',
+      icon: 'more'
+    }
   ];
 
 
