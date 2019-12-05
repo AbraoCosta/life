@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar >
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+        <ion-searchbar (ionChange)=getInputElement() placeholder="Produtos" animated></ion-searchbar>     
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-list >
+    <ion-item *ngFor="let produto of produtos" (click)=presentActionSheet(produto.nome,produto.key,produto.price,produto.ano,produto.prodution,produto.description,produto.img)>
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src={{produto.img}}>
+        </ion-thumbnail>
+        <ion-label>
+          <h3>{{produto.nome}}</h3>
+          <p>{{produto.price}}</p>
+          <p>{{produto.ano}}</p>
+        </ion-label>
+      </ion-item>
+    </ion-item>
+  </ion-list>
+</ion-content>
+<ion-footer>
+    <div class="cart-buttons">
+        <ion-fab vertical="bottom" horizontal="end"  slot="fixed">
+          <ion-fab-button>
+            <ion-icon name="cart"></ion-icon>
+          </ion-fab-button>
+        </ion-fab>
+      </div>
+        <ion-toolbar>
+     
+  </ion-toolbar>
+</ion-footer>

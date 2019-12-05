@@ -1,0 +1,21 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">        
+        <ion-back-button text="Voltar"></ion-back-button>
+      </ion-buttons>
+      <ion-title>
+          Adicionar
+        </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content padding>
+  <ion-input [(ngModel)]="inputText" placeholder="Nome do Produto"></ion-input>
+  <ion-input type="numeric" [(ngModel)]="inputText1" placeholder="Preço"></ion-input> 
+  <ion-input type="numeric" [(ngModel)]="inputText2" placeholder="Ano de lançamento"></ion-input>  
+  <ion-input [(ngModel)]="inputText4" placeholder="Produtora"></ion-input>
+  <ion-input [(ngModel)]="inputText5" placeholder="Descrição do jogo"></ion-input>
+  <ion-input [(ngModel)]="inputText3" placeholder="Imagem do produto"></ion-input>
+  <ion-button expand = "full" (click)="addItem({nome:inputText, price:inputText1+'$', ano:inputText2, prodution:inputText4, description:inputText5, img:inputText3}
+  )">adicionar</ion-button>
+</ion-content>

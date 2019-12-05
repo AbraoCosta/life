@@ -1,0 +1,53 @@
+<ion-content>
+  <div class="page-registro">
+    <!-- LOGO -->
+    <div class="page-login-logo"></div>
+    <!-- TEXTOS -->
+    <!-- TÍTULO -->
+    <h5 class="center txtazul  bold mg-top-25">
+      Vamos começar!
+    </h5>
+    <!-- SUBTÍTULO -->
+    <p class="txtbranco light no-margin mg-top-5">
+      Entre com suas informações para continuar
+    </p>
+    <form class="form" [formGroup]="validations_form" (ngSubmit)="tryRegister(validations_form.value)">
+
+      <ion-item>
+        <ion-label position="floating" color="primary">Email</ion-label>
+        <ion-input type="text" formControlName="email"></ion-input>
+      </ion-item>
+      <div class="txtbranco light">
+        <div class="validation-errors">
+          <ng-container *ngFor="let validation of validation_messages.email">
+            <div class="error-message"
+              *ngIf="validations_form.get('email').hasError(validation.type) && (validations_form.get('email').dirty || validations_form.get('email').touched)">
+              {{ validation.message }}
+            </div>
+          </ng-container>
+        </div>
+      </div>
+
+      <ion-item>
+        <ion-label position="floating" color="primary">Senha</ion-label>
+        <ion-input type="password" formControlName="password" class="form-controll" required></ion-input>
+      </ion-item>
+      <div class="txtbranco light">
+        <div class="validation-errors">
+          <ng-container *ngFor="let validation of validation_messages.password">
+            <div class="error-message"
+              *ngIf="validations_form.get('password').hasError(validation.type) && (validations_form.get('password').dirty || validations_form.get('password').touched)">
+              {{ validation.message }}
+            </div>
+          </ng-container>
+        </div>
+      </div>
+
+      <ion-button class="submit-btn" type="submit" [disabled]="!validations_form.valid" expand="block">Cadastre-se
+      </ion-button>
+    </form>
+    <ion-button class="txtbranco bold" (click)="goLoginPage()" size="default" fill="outline" type="button"
+      expand="full">Já tem conta?
+    </ion-button>
+  </div>
+</ion-content>

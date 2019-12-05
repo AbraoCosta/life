@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+      
+      <ion-buttons slot="end" size="large" (click) = "CloseModal()" ion-button icon-only>           
+            <ion-icon size = "large" name="close"></ion-icon>         
+        </ion-buttons>      
+    <ion-title class="center">{{NameProduto}}</ion-title>     
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img src={{ImgProduto}} />
+    <ion-card-header>
+      <ion-card-subtitle>Lançado pela {{ProdutionProduto}} no ano de {{YearProduto}}</ion-card-subtitle>
+      <ion-card-title>{{NameProduto}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      {{DescriptionProduto}}
+    </ion-card-content>
+  </ion-card>  
+</ion-content>
+<ion-footer>
+    <div class="cart-buttons">
+        <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+          <ion-fab-button>
+            <ion-icon name="cart"></ion-icon>
+          </ion-fab-button>
+        </ion-fab>
+      </div>
+    <ion-toolbar>       
+    </ion-toolbar>
+   
+  </ion-footer>

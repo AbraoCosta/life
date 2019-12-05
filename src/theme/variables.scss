@@ -1,0 +1,210 @@
+:root {
+  /** primary **/
+  --ion-color-primary: #4279D6;
+  --ion-color-primary-rgb: 56, 128, 255;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #3a6abc;
+  --ion-color-primary-tint: #5586da;
+
+  /** secondary **/
+  --ion-color-secondary: #0cd1e8;
+  --ion-color-secondary-rgb: 12, 209, 232;
+  --ion-color-secondary-contrast: #ffffff;
+  --ion-color-secondary-contrast-rgb: 255, 255, 255;
+  --ion-color-secondary-shade: #0bb8cc;
+  --ion-color-secondary-tint: #24d6ea;
+
+  /** tertiary **/
+  --ion-color-tertiary: #7044ff;
+  --ion-color-tertiary-rgb: 112, 68, 255;
+  --ion-color-tertiary-contrast: #ffffff;
+  --ion-color-tertiary-contrast-rgb: 255, 255, 255;
+  --ion-color-tertiary-shade: #633ce0;
+  --ion-color-tertiary-tint: #7e57ff;
+
+  /** success **/
+  --ion-color-success: #10dc60;
+  --ion-color-success-rgb: 16, 220, 96;
+  --ion-color-success-contrast: #ffffff;
+  --ion-color-success-contrast-rgb: 255, 255, 255;
+  --ion-color-success-shade: #0ec254;
+  --ion-color-success-tint: #28e070;
+
+  /** warning **/
+  --ion-color-warning: #ffce00;
+  --ion-color-warning-rgb: 255, 206, 0;
+  --ion-color-warning-contrast: #ffffff;
+  --ion-color-warning-contrast-rgb: 255, 255, 255;
+  --ion-color-warning-shade: #e0b500;
+  --ion-color-warning-tint: #ffd31a;
+
+  /** danger **/
+  --ion-color-danger: #f04141;
+  --ion-color-danger-rgb: 245, 61, 61;
+  --ion-color-danger-contrast: #ffffff;
+  --ion-color-danger-contrast-rgb: 255, 255, 255;
+  --ion-color-danger-shade: #d33939;
+  --ion-color-danger-tint: #f25454;
+
+  /** dark **/
+  --ion-color-dark: #222428;
+  --ion-color-dark-rgb: 34, 34, 34;
+  --ion-color-dark-contrast: #ffffff;
+  --ion-color-dark-contrast-rgb: 255, 255, 255;
+  --ion-color-dark-shade: #1e2023;
+  --ion-color-dark-tint: #383a3e;
+
+  /** medium **/
+  --ion-color-medium: #989aa2;
+  --ion-color-medium-rgb: 152, 154, 162;
+  --ion-color-medium-contrast: #ffffff;
+  --ion-color-medium-contrast-rgb: 255, 255, 255;
+  --ion-color-medium-shade: #86888f;
+  --ion-color-medium-tint: #a2a4ab;
+
+  /** light **/
+  --ion-color-light: #f4f5f8;
+  --ion-color-light-rgb: 244, 244, 244;
+  --ion-color-light-contrast: #000000;
+  --ion-color-light-contrast-rgb: 0, 0, 0;
+  --ion-color-light-shade: #d7d8da;
+  --ion-color-light-tint: #f5f6f9;
+
+  
+  //Cores
+  --azul: rgba(66, 121, 214, 1);
+  --amarelo: rgba(226, 175, 54, 1);
+  --marrom: rgba(91, 83, 73, 1);
+  --cinza: rgba(191, 187, 186, 1);
+  --branco: rgba(228, 228, 228, 1);
+
+}
+
+// PAGINAS
+.page-login{
+  height: 100%;
+  width: 100%;
+  background-image: url("../assets/img/login/mario1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  animation-duration: 12s;
+  animation-name:transicao;
+  animation-iteration-count: infinite;  
+}
+
+.page-registro{
+  height: 100%;
+  width: 100%;
+  background-image: url("../assets/img/login/mario1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  animation-duration: 12s;
+  animation-name:transicao;
+  animation-iteration-count: infinite;  
+}
+.page-login-logo{
+  background-image: url("../assets/img//logo.png");
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 40%;
+}
+
+// TEXTOS
+.texto{
+  text-align: center;
+  color: var(--amarelo);
+  background-color: var(--branco);
+  padding-top: 10px;
+}
+.button_login{
+  padding: 10px;
+  background: var(--cinza);
+  border-radius: 100px;
+  color: var(--azul);
+  border-color: var(--azul);
+}
+.txtbranco{
+  color: var(--branco);
+  text-align: center;
+}
+.txtpreto{
+  color: var(--marrom);
+}
+.txtazul{
+  color: var(--azul);
+  text-align: center;
+}
+
+//Margin
+.no-margin {
+  margin: 0px;
+}
+.mg-top-5 {
+  margin-top: 5px;
+}
+.mg-top-10 {
+  margin-top: 10px;
+}
+.mg-top-20 {
+  margin-top: 20px;
+}
+.mg-top-30 {
+  margin-top: 30px;
+}
+.mg-top-40 {
+  margin-top: 40px;
+}
+
+//Padding
+.no-padding {
+  padding: 0px;
+}
+.padding-40 {
+  padding: 40px;
+}
+.padding-top-10-percent {
+  padding-top: 10%;
+}
+.padding-top-30 {
+  padding-top: 30px;
+}
+
+//Font style
+.text-profile{
+  font-size: 5px;
+}
+.bold {
+  font-weight: 700;
+}
+.light {
+  font-weight: 300;
+}
+.center{
+  text-align: center;
+}
+.left{
+  text-align: left;
+}
+
+.no-background{
+  background: none;
+}
+
+@keyframes transicao
+{
+  0%{
+      background-image: url("../assets/img/login/mario1.png");
+  }
+
+  35%{
+      background-image: url("../assets/img/login//metroid.png");
+  }
+
+  70%{
+      background-image: url("../assets/img/login/zelda.png");
+  }
+}
